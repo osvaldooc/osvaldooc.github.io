@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREDIEFECTIVO - Soluciones Financieras Rápidas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        nav {
+            background-color: #2c3e50;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), url('https://images.unsplash.com/photo-1601597111158-2fceff292cdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .credit-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .credit-card {
+            flex: 1 1 300px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .credit-card:hover {
+            transform: translateY(-5px);
+        }
+        .form-section {
+            background-color: #e8f4fc;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        input, textarea, select, button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #34495e;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        .whatsapp-btn, .call-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: scale(1.05);
+        }
+        .call-btn {
+            background-color: #3498db;
+        }
+        .call-btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .credit-options {
+                flex-direction: column;
+            }
+            .hero {
+                height: 50vh;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CREDIEFECTIVO</h1>
+        <p>Dedicados a proveer soluciones financieras rápidas y accesibles</p>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#creditos">Créditos</a>
+        <a href="#solicitud">Solicitar</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Tu éxito financiero comienza aquí</h2>
+            <p>Conectamos tus proyectos con los recursos que necesitas</p>
+            
+            <!-- Botones de contacto destacados -->
+            <div class="contact-buttons">
+                <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20me%20interesa%20saber%20más%20sobre%20sus%20créditos" 
+                   class="whatsapp-btn" 
+                   target="_blank">
+                   <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="tel:+525612454753" class="call-btn">
+                   <i class="fas fa-phone"></i> Llamar ahora
+                </a>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section id="mision-vision" class="section">
+            <h2>Misión y Visión</h2>
+            <p><strong>Misión:</strong> Dedicados a proveer soluciones financieras rápidas y accesibles.</p>
+            <p><strong>Visión:</strong> Ser la mejor empresa de Gestión de productos financieros para conectar con tus proyectos.</p>
+            
+            <!-- Botones de contacto en sección importante -->
+            <div class="contact-buttons">
+                <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20quiero%20más%20información%20sobre%20sus%20servicios" 
+                   class="whatsapp-btn" 
+                   target="_blank">
+                   <i class="fab fa-whatsapp"></i> Consultar por WhatsApp
+                </a>
+            </div>
+        </section>
+        <section id="creditos" class="section">
+            <h2>Nuestros Créditos</h2>
+            <div class="credit-options">
+                <div class="credit-card">
+                    <h3>Créditos Personales</h3>
+                    <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Persona feliz recibiendo dinero" style="width:100%; border-radius:8px;">
+                    <p>Desde <strong>$5,000 hasta $15,000</strong> con aprobación en <strong>24 horas</strong>.</p>
+                    <ul>
+                        <li>Sin aval</li>
+                        <li>Tasas competitivas</li>
+                        <li>Plazos flexibles</li>
+                    </ul>
+                    <!-- Botón específico para este crédito -->
+                    <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20me%20interesa%20el%20crédito%20personal%20de%20$5,000%20a%20$15,000" 
+                       class="whatsapp-btn" 
+                       style="display:block; text-align:center; margin-top:15px;">
+                       Solicitar por WhatsApp
+                    </a>
+                </div>
+                <div class="credit-card">
+                    <h3>Créditos Grupales</h3>
+                    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Grupo feliz recibiendo dinero" style="width:100%; border-radius:8px;">
+                    <p>Para <strong>más de 5 integrantes</strong>, montos desde <strong>$5,000 hasta $90,000</strong>.</p>
+                    <ul>
+                        <li>Ideales para proyectos productivos</li>
+                        <li>Apoyo a MIPYMES</li>
+                        <li>Asesoría financiera incluida</li>
+                    </ul>
+                    <!-- Botón específico para este crédito -->
+                    <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20mi%20grupo%20está%20interesado%20en%20el%20crédito%20grupal%20de%20$5,000%20a%20$90,000" 
+                       class="whatsapp-btn" 
+                       style="display:block; text-align:center; margin-top:15px;">
+                       Solicitar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="solicitud" class="section form-section">
+            <h2>Solicita tu crédito</h2>
+            <p>Envíanos tu información y un asesor se pondrá en contacto contigo.</p>
+            <form id="credit-form">
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="tel" placeholder="Teléfono" required>
+                <select required>
+                    <option value="">Tipo de crédito</option>
+                    <option value="personal">Personal ($5,000 - $15,000)</option>
+                    <option value="grupal">Grupal ($5,000 - $90,000)</option>
+                </select>
+                <textarea placeholder="Describe brevemente tu proyecto o necesidad" rows="4"></textarea>
+                <input type="file" accept=".pdf" placeholder="Sube tu solicitud en PDF">
+                <button type="submit">Enviar solicitud</button>
+            </form>
+            
+            <!-- Alternativa de contacto directo -->
+            <div style="text-align:center; margin-top:20px;">
+                <p>¿Prefieres atención inmediata?</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20quiero%20asesoría%20personalizada%20sobre%20créditos" 
+                       class="whatsapp-btn" 
+                       target="_blank">
+                       <i class="fab fa-whatsapp"></i> Chatear con asesor
+                    </a>
+                    <a href="tel:+525612454753" class="call-btn">
+                       <i class="fas fa-phone"></i> Llamar ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer id="contacto">
+        <h3>Contáctanos</h3>
+        <div class="contact-buttons">
+            <a href="https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20necesito%20información" 
+               class="whatsapp-btn" 
+               target="_blank">
+               <i class="fab fa-whatsapp"></i> WhatsApp: +52 56 1245 4753
+            </a>
+            <a href="tel:+525612454753" class="call-btn">
+               <i class="fas fa-phone"></i> Llama: +52 56 1245 4753
+            </a>
+        </div>
+        <p>&copy; 2023 CREDIEFECTIVO - Todos los derechos reservados</p>
+    </footer>
+    
+    <!-- Iconos de Font Awesome (para los botones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <script>
+        document.getElementById('credit-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password');
+            if (password && password.value === 'olvidalo') {
+                alert('Solicitud enviada correctamente. Nos pondremos en contacto contigo pronto.');
+                this.reset();
+            } else {
+                // Si no hay contraseña o es incorrecta, redirigir a WhatsApp
+                window.location.href = "https://wa.me/525612454753?text=Hola%20CREDIEFECTIVO,%20he%20completado%20el%20formulario%20web%20y%20quiero%20más%20información";
+            }
+        });
+    </script>
+</body>
+</html>
